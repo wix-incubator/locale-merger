@@ -3,7 +3,7 @@ Locale Merger
 
 
 ## How To Use:
-1. Install `npm -i --save-dev locale-merger` 
+1. Install `npm i --save-dev locale-merger` 
 2. Create a `.js` file in your project.
 3. Write the following in the file:
     ```typescript
