@@ -38,3 +38,15 @@ merge(folderArray, destinationPath, newFilePrefix);
 | `folderArray`    | `string[]` |   Yes    | List of folder containing locale files   |
 | `destinationPath`| `string`   |   Yes    | Destination to put merged files          |
 | `newFilePrefix`  | `string`   |   Yes    | Prefix for all newly created files.      |
+
+## File types
+
+The library supports two types of files: `json` & `js`.
+
+The `json` files are merged together in to one json object, where the first file overrides the second and so on...
+
+**Example:** for a merge of these json objects `{a: 1}, {a: 2, b:2}, {a: 3, b: 3, c: 3}`  (in the order they are displayed) the result will be `{a: 1, b: 2, c: 3}`.
+
+The `js` files (and any other file type) will be concatenanted in the order in which they are given.
+
+**Example:** for the following file contents `1`, `2`, `3` the result will be `123`.
