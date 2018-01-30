@@ -27,6 +27,10 @@ export function merge(folders: string[], destinationPath: string, newFilePrefix:
 
       const typedFiles = files[fileType];
 
+      if (!typedFiles || !locale) {
+        return;
+      }
+
       if (typedFiles.type === MergeType.ASSIGN) {
         typedFiles.locales[locale] = Object.assign({}, JSON.parse(getFileContents(filePath)), typedFiles.locales[locale]);
       } else /* CONCAT and DEFAULT */ {
@@ -97,7 +101,7 @@ function getFileDefinitions(fileName): {locale: string, fileType: string} {
   const extIndex = fileName.lastIndexOf('.') + 1;
   const localeIndex = fileName.lastIndexOf('_') + 1;
   return {
-    locale: fileName.substring(localeIndex, extIndex - 1),
+    locale: localeIndex !== 0 ? fileName.substring(localeIndex, extIndex - 1) : null,
     fileType: fileName.substring(extIndex)
   };
 }
