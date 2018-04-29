@@ -26,6 +26,7 @@
     "preset": "yoshi"
   },
   "devDependencies": {
+    "@types/node": "^8.0.0",
     "@types/chai": "~4.0.0",
     "@types/mocha": "~2.2.0",
     "@types/mock-fs": "^3.6.30",
