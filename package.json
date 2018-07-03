@@ -32,7 +32,7 @@
     "@types/mock-fs": "^3.6.30",
     "chai": "~4.1.0",
     "haste-preset-yoshi": "latest",
-    "husky": "~0.14.0",
+    "monorepo-staged-precommit": "^1.0.5",
     "mock-fs": "^4.4.2",
     "typescript": "~2.4.0"
   }
