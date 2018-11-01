@@ -30,12 +30,5 @@
                 <role>developer</role>
             </roles>
         </developer>
-        <developer>
-            <name>oripi</name>
-            <email>oripi@wix.com</email>
-            <roles>
-                <role>developer</role>
-            </roles>
-        </developer>
     </developers>
 </project>
