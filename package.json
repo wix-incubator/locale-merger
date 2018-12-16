@@ -30,7 +30,7 @@
     "chai": "~4.1.0",
     "monorepo-staged-precommit": "^1.0.5",
     "mock-fs": "^4.4.2",
-    "typescript": "~2.4.0",
+    "typescript": "^3.0.0",
     "yoshi": "^1.2.0"
   }
 }
