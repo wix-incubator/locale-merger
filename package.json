@@ -15,15 +15,12 @@
     "registry": "http://repo.dev.wix/artifactory/api/npm/npm-local/"
   },
   "scripts": {
-    "start": "haste start",
-    "precommit": "haste lint",
-    "pretest": "haste build",
-    "test": "haste test",
-    "posttest": "haste lint",
-    "release": "haste release"
-  },
-  "haste": {
-    "preset": "yoshi"
+    "start": "yoshi start",
+    "precommit": "yoshi lint",
+    "pretest": "yoshi build",
+    "test": "yoshi test",
+    "posttest": "yoshi lint",
+    "release": "yoshi release"
   },
   "devDependencies": {
     "@types/node": "^8.0.0",
@@ -31,9 +28,9 @@
     "@types/mocha": "~2.2.0",
     "@types/mock-fs": "^3.6.30",
     "chai": "~4.1.0",
-    "haste-preset-yoshi": "latest",
     "monorepo-staged-precommit": "^1.0.5",
     "mock-fs": "^4.4.2",
-    "typescript": "~2.4.0"
+    "typescript": "~2.4.0",
+    "yoshi": "^1.2.0"
   }
 }
