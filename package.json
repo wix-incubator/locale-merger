@@ -32,6 +32,6 @@
     "monorepo-staged-precommit": "^1.0.5",
     "tslint-config-wix": "^1.0.31",
     "typescript": "^3.0.0",
-    "yoshi": "^3.0.0"
+    "@wix/yoshi": "^3.0.0"
   }
 }

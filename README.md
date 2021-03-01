@@ -17,8 +17,8 @@ Locale Merger
     const {merge} = require('./mergeLocales.js');
     merge([
             'dist/statics/assets/locale/store-manager',
-            'node_modules/wixstores-dashboard-storemanager-common/dist/statics/assets/locale/storemanager-common',
-            'node_modules/wix-locale-data/dist/scripts/locale'
+            'node_modules/@wix/wixstores-dashboard-storemanager-common/dist/statics/assets/locale/storemanager-common',
+            'node_modules/@wix/wix-locale-data/dist/scripts/locale'
           ],
           'dist/statics/assets/locale/all',
           'locale');
