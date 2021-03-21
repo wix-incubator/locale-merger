@@ -1,5 +1,5 @@
 {
-  "name": "locale-merger",
+  "name": "@wix/locale-merger",
   "version": "1.0.0",
   "license": "UNLICENSED",
   "private": false,
